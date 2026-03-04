@@ -14,9 +14,9 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 sm:px-6 sm:pt-5">
-      <nav className="mx-auto max-w-[1600px] rounded-2xl bg-navy shadow-lg shadow-navy/20">
-        <div className="flex items-center justify-between px-10 py-3">
+    <div className="fixed top-0 left-0 right-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5">
+      <nav className="mx-auto max-w-[1600px] rounded-xl sm:rounded-2xl bg-navy shadow-lg shadow-navy/20">
+        <div className="flex items-center justify-between px-5 py-2 sm:px-10 sm:py-3">
           {/* Logo */}
           <a href="#" className="flex items-center">
             <Image
@@ -24,7 +24,8 @@ export function Navbar() {
               alt="Revlo"
               width={130}
               height={42}
-              className="brightness-0 invert"
+              style={{ width: 'auto', height: 'auto' }}
+              className="brightness-0 invert max-h-8 sm:max-h-10 w-auto"
             />
           </a>
 

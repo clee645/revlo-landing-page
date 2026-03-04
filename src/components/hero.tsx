@@ -4,17 +4,17 @@ export function Hero() {
       {/* Faint blue circle behind the dashboard */}
       <div className="pointer-events-none absolute right-[-10%] top-[10%] h-[700px] w-[700px] rounded-full bg-accent-blue/[0.04]" />
 
-      <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-8 pt-40 pb-24 lg:grid-cols-[1fr_1.6fr] lg:pt-48 lg:pb-32">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-8 px-5 pt-28 pb-16 sm:gap-12 sm:px-8 sm:pt-40 sm:pb-24 lg:grid-cols-[1fr_1.6fr] lg:pt-48 lg:pb-32">
         {/* Left: Copy */}
         <div className="flex flex-col justify-center">
-          <div className="mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-navy/10 bg-white px-5 py-2.5 text-base text-navy">
+          <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-navy/10 bg-white px-4 py-2 text-sm sm:mb-8 sm:px-5 sm:py-2.5 sm:text-base text-navy">
             <span className="h-2.5 w-2.5 rounded-full bg-accent-green" />
             AI-powered carrier automation
           </div>
-          <h1 className="text-5xl font-bold leading-tight tracking-tight text-navy sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-navy sm:text-5xl md:text-6xl lg:text-7xl">
             Move more freight with less effort
           </h1>
-          <p className="mt-8 max-w-xl text-xl leading-relaxed text-text-secondary">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-secondary sm:mt-8 sm:text-xl">
             Use AI to handle calls, texts, and emails — the way your best
             dispatcher would. Available 24/7, across every channel.
           </p>
@@ -63,8 +63,8 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right: Dashboard mockup — oversized and bleeding right */}
-        <div className="relative lg:-mr-32 xl:-mr-48">
+        {/* Right: Dashboard mockup — oversized and bleeding right on desktop */}
+        <div className="relative overflow-hidden rounded-2xl lg:overflow-visible lg:-mr-32 xl:-mr-48">
           <DashboardMockup />
         </div>
       </div>
